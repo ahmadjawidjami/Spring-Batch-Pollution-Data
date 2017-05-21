@@ -1,6 +1,6 @@
 package hello;
 
-public class PollutionData {
+public class PollutionData extends MyClass {
 
 
 
@@ -25,6 +25,11 @@ public class PollutionData {
 
     public PollutionData() {
 
+    }
+
+    public String [] getClassVariables(){
+        return new String[] { "stationCode", "stationName", "dailyMean", "measuringMethod", "firstMeasuringDate",
+                "recentMeasuringDate", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"};
     }
 
     public PollutionData(String stationCode, String stationName, int dailyMean, String measuringMethod, String firstMeasuringDate,
